@@ -2,7 +2,7 @@ package tasks;
 
 import java.util.ArrayList;
 
-public class Tasks {
+public class Tasks211_230 {
     public static void task211(ArrayList<Integer> numbers) {
         System.out.println("Task - 211");
         int sum = 0;
@@ -225,11 +225,11 @@ public class Tasks {
         System.out.println("-------------------------------");
     }
 
-    public static void task226(ArrayList<Integer> numbers, int t) {
+    public static void task226(ArrayList<Integer> numbers, int k) {
         System.out.println("Task - 226");
         int count = 0;
         for (int number : numbers) {
-            if (Math.abs(number) < t) {
+            if (Math.abs(number) < k) {
                 System.out.println("number = " + number);
                 count++;
             }
@@ -269,17 +269,17 @@ public class Tasks {
     }
 
 
-    public static void task229(ArrayList<Integer> numbers, int k) {
+    public static void task229(ArrayList<Integer> numbers) {
         System.out.println("Task - 229");
-        int sum = 1;
+        int multiple = 1;
         for (int i = 0; i < numbers.size(); i++) {
             int number = numbers.get(i);
             if (number - i > 0) {
-                sum *= number;
+                multiple *= number;
             }
         }
 
-        System.out.println("sum  = " + sum);
+        System.out.println("multiple  = " + multiple);
         System.out.println("-------------------------------");
     }
 
@@ -299,6 +299,6 @@ public class Tasks {
         System.out.println("result  = " + Math.sqrt(sum / count));
         System.out.println("-------------------------------");
     }
-    
+
 }
 
