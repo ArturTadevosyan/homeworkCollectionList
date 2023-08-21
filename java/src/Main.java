@@ -1,14 +1,15 @@
 import tasks.Tasks211_230;
 import tasks.Tasks231_250;
+import tasks.Tasks251_260;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> integerNumbers = new ArrayList<>(Arrays.asList(-10, 2, 9, -15, 8, -1, 5,-5,122,50));
+        ArrayList<Integer> integerNumbers = new ArrayList<>(Arrays.asList(-10, 2, 9, -15, 8, -1, 5, -5,-15, 122, 50));
         ArrayList<Double> doublesNumbers = new ArrayList<>(Arrays.asList(-1.22, 5.12, 20.1, -15.55, 8.2, -1.56));
-
+//
 //        System.out.println("Task 211-230 \n---------------------------");
 //        Tasks211_230.task211(integerNumbers);
 //        Tasks211_230.task212(integerNumbers);
@@ -48,11 +49,23 @@ public class Main {
 //        Tasks231_250.task243(integerNumbers, 4);
 //        Tasks231_250.task244(integerNumbers);
 //        Tasks231_250.task245(integerNumbers);
-        Tasks231_250.task246(integerNumbers);
+//        Tasks231_250.task246(integerNumbers);
 //        Tasks231_250.task247(integerNumbers);
 //        Tasks231_250.task248(integerNumbers, 5);
 //        Tasks231_250.task249(integerNumbers, 7);
 //        Tasks231_250.task250(integerNumbers);
+
+        System.out.println("Task 251-260 \n---------------------------");
+        Tasks251_260.task251getMaxNumber(integerNumbers);
+        Tasks251_260.task252getMinNumber(integerNumbers);
+        Tasks251_260.task253(integerNumbers);
+        Tasks251_260.task254(integerNumbers);
+        Tasks251_260.task255(integerNumbers);
+        Tasks251_260.task256(integerNumbers);
+        Tasks251_260.task257(integerNumbers);
+        Tasks251_260.task258(integerNumbers);
+        Tasks251_260.task259(integerNumbers);
+        Tasks251_260.task260(integerNumbers);
 
 
     }

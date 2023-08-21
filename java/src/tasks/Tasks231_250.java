@@ -315,8 +315,8 @@ public class Tasks231_250 {
     }
 
     public static void task250(ArrayList<Integer> numbers) {
-        System.out.println("Task - 230");
-        int multiple = 0;
+        System.out.println("Task - 250");
+        int multiple = 1;
         double count = 0;
         for (int i = 0; i < numbers.size(); i++) {
             int number = numbers.get(i);
@@ -328,8 +328,7 @@ public class Tasks231_250 {
 
         }
         if (count != 0) {
-            System.out.println("multiple = " + multiple + " |  count = " + count +
-                    "\nsum = " + multiple / count);
+            System.out.println("multiple = " + multiple + " |  count = " + count + "\nsum = " + multiple / count);
         }
         System.out.println("-------------------------------");
     }
