@@ -235,23 +235,20 @@ public class Tasks231_250 {
         System.out.println("Task - 246");
         int sum = 0;
         double count = 0;
-
-        System.out.println("size = " + numbers.size());
-        int loopSize = numbers.size();
-        if (!isSquareNumber(loopSize)) {
-            loopSize = (int) Math.sqrt(numbers.size()) + 2;
-            System.out.println("is square: loop size = " + loopSize);
-        }
-        System.out.println();
-        for (int i = 0; i < loopSize; i++) {
-            int number = numbers.get(i);
-            System.out.println(i);
-            if (isSquareNumber(i)) {
-                System.out.println("number [" + i + "] = " + number);
-                sum += number;
-                count++;
+        System.out.println("List size = " + numbers.size());
+        double loopSize = Math.sqrt(numbers.size());
+        int number;
+        for (double i = 0; i <= loopSize; i++) {
+            if (loopSize != i) {
+                number = numbers.get((int) Math.pow(i, 2));
+            } else {
+                number = numbers.get((int) Math.pow(i, 2) - 1);
             }
+            System.out.println("index = " + (i) + "| Number = " + number);
+            sum += number;
+            count++;
         }
+
         if (count != 0) {
             System.out.println("sum = " + sum + " |  count = " + count +
                     "\nsum = " + sum / count);
@@ -259,11 +256,6 @@ public class Tasks231_250 {
         System.out.println("-------------------------------");
     }
 
-    private static boolean isSquareNumber(double number) {
-        double sqrtNumber = Math.sqrt(number);
-        double squareNumber = Double.parseDouble((int) sqrtNumber + ".0");
-        return sqrtNumber == squareNumber;
-    }
 
     //---------------------------------------------------------------------------------------
     public static void task247(ArrayList<Integer> numbers) {
